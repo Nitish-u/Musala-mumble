@@ -25,10 +25,10 @@ export default function Card({ heading, imgSrc, likes, saves, description }: { h
         }
     }, []);
     return (
-        <div className='p-2 border-2 border-black max-w-[30rem] flex rounded-xl gap-2'>
+        <div className='p-2 border-2 border-black max-w-[30rem] flex rounded-xl gap-2 aspect-video'>
             <div className="cardImg relative flex-1">
                 <SlOptionsVertical className='absolute p-2 bg-white rounded-sm left-2 top-2' size="2.5rem" />
-                <div className="profileDetails rounded-lg overflow-hidden">
+                <div className="profileDetails rounded-lg overflow-hidden h-full">
                     <Image src={Img} alt='static img' className='w-full h-full object-cover' />
                 </div>
             </div>
